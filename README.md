@@ -59,8 +59,7 @@ npm install
 ## Start
 ----
 
-0.Open map.js in the src/Components/ directory and go to line 86 and edit the following. 
- ```sh
+0.Open map.js in the src/Components/ directory and go to line 86 and edit the following. ```sh
           <React.Fragment>
             <WrappedMap
             googleMapURL=
