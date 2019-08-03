@@ -8,7 +8,7 @@ import Help from './help'
 // Material UI
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
-
+import API from './api.json'
 
 
 
@@ -83,7 +83,7 @@ const WrappedMap = withScriptjs(withGoogleMap(Map))
           {/* change  process.env.REACT_APP_GOOGLE_KEY to your own google key */}
           <React.Fragment>
             <WrappedMap
-            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp6libraries=gemotery,drawing,places&key=${process.env.REACT_APP_GOOGLE_KEY}`}
+            googleMapURL={`https://maps.googleapis.com/maps/api/js?v=3.exp6libraries=gemotery,drawing,places&key=${API.GOOGLE_API_KEY}`}
             loadingElement={<div style={{height:'100%'}} />}
             containerElement={<div style={{height:'100%'}} />}
             mapElement={<div style={{height: '100%'}} />}
