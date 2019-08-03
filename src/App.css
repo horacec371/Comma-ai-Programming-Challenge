@@ -1,0 +1,215 @@
+.App {
+  text-align: center;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+:root{
+  --positionTop:none;
+  --positionLeft:none;
+  --positionTop2:50%;
+  --positionLeft2:2.4%
+}
+
+.grid-container{
+  display:grid;
+  grid-template-columns:2fr 2fr;
+  grid-column-gap: 5rem;
+
+}
+
+
+
+.hidden{
+  display: none;
+}
+
+
+.help{
+  position: absolute;
+  width: 400;
+  background-color: white;
+  color:black;
+  outline: none;
+  top: var(--positionTop);
+  left: var(--positionLeft);
+  transform: translate(var(--positionTop), var(--positionLeft));
+}
+
+.help2{
+  position: absolute;
+  width: 400;
+  background-color: white;
+  color:black;
+  outline: none;
+  top: var(--positionTop2);
+  left: var(--positionLeft2);
+  transform: translate(var(--positionLeft2), var(--positionLeft2));
+}
+
+.paper-box{
+  padding:1em;
+  max-height: 18.750em;
+    overflow:auto;
+}
+
+ul{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+
+.intro{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+}
+
+.intro2{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  border-color: black transparent black transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link{
+
+      -webkit-transition: all 0.4s ease;
+      transition: all 0.4s ease-in;
+      color: black;
+}
+
+.nav-link:hover{
+   font-size: 1.1rem;
+
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  align-items: center;
+}
+
+.table-wrapper {
+  overflow: auto;
+    max-width: 100%;
+    background:
+        linear-gradient(to right, white 30%, rgba(255,255,255,0)),
+        linear-gradient(to right, rgba(255,255,255,0), white 70%) 0 100%,
+        radial-gradient(farthest-side at 0% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)),
+        radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,.2), rgba(0,0,0,0)) 0 100%;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: 40px 100%, 40px 100%, 14px 100%, 14px 100%;
+  background-position: 0 0, 100%, 0 0, 100%;
+    background-attachment: local, local, scroll, scroll;
+}
+
+tr {
+  border-bottom: 1px solid;
+}
+
+th {
+  background-color: #555;
+  color: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 0.5em 1em;
+  white-space: nowrap;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  font-size: inherit;
+  margin: 0 0.25em;
+  padding: 0.25em 0.5em;
+  background-color: #555;
+  color: #fff;
+  border: 0;
+  transition: background-color 0.4s, color 0.4s;
+
+  &:hover {
+    background-color: #bbb;
+    color: #000;
+  }
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  flex-wrap: wrap;
+}
+
+.page-numbers {
+  margin: 1em 1em 0;
+}
+
+.page-number {
+  padding: 0.5em;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.active {
+  opacity: 1;
+}
+
+@media screen and (min-width: 540px) {
+  .backward {
+    order: 1;
+  }
+
+  .page-numbers {
+    order: 2;
+    margin-top: 0;
+  }
+
+  .forward {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .help,.help2{
+    display:none;
+  }
+}
