@@ -59,18 +59,12 @@ npm install
 ## Start
 ----
 
-0.Open map.js in the src/Components/ directory and go to line 86 and edit the following. 
+0.Open api.json in the src/Components/ directory and put your google maps api key
 ```sh
-          <React.Fragment>
-            <WrappedMap
-            googleMapURL=
-            {`https://maps.googleapis.com/maps/api/js?v=3.exp6libraries=gemotery,drawing,places&key=${'YOUR API KEY HERE'}`}            
-            PUT YOUR GOOGLE MAPS API KEY THERE
-            loadingElement={<div style={{height:'100%'}} />}
-            containerElement={<div style={{height:'100%'}} />}
-            mapElement={<div style={{height: '100%'}} />}
-            coords = {this.props.coords}
-            />
+    {
+        "GOOGLE_API_KEY":"ENTER YOUR KEY HERE"
+    }
+
 ```
 
 
