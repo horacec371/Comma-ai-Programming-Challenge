@@ -29,6 +29,7 @@ Individual JSON files sizes varying from 8 KB to 1,877 KB
      1. [Server architecture](#Server_architecture)
      2. [Difficulties/Learning curve](#Learningcurve)
 3. [Built with](#Builtwith)
+4. [Deployment](#Deployment)
 
 
 
@@ -170,3 +171,7 @@ Comming soon.
 * [Node.js](https://nodejs.org/en/) + [Express.js](https://expressjs.com)
 ## Frontend
  * [React](https://reactjs.org/docs/getting-started.html)
+  
+# 4.Deployment
+Deployed with Heroku
+commaaichallenge.herokuapp.com (Loading times are slower due to cheap hosting plan)
